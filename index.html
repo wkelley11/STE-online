@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STE Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+    	<div class="logo">
+    		<img width="150px" height="100px" alt="STELogo" src="./STE+logo.jpg"/>
+	    </div>
+        <h1>STE Application</h1>
+        <form action="https://script.google.com/macros/s/AKfycbyL2tZzgSIUA_JJXfPsK61oRUmClyFxKSo6SVoVH0nRe0n_t5CW3eiu00jCK485aPTO/exec" method="POST" class="gform">
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Position Applying For</label>
+                <input type="text" id="position" name="position" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Mailing Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+             <div class="form-group">
+                <label for="apt">Apartment #</label>
+                <input type="text" id="apt" name="apt" required>
+            </div>
+             <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+             <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+             <div class="form-group">
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip" required>
+            </div>
+             <div class="form-group">
+                <label for="shirt">Shirt Size</label>
+<!--                 <input type="text" id="shit" name="shirt" required> -->
+                <select id="shirt" name="shirt" required>
+ 					<option value="xs">Xtra Small</option>
+ 					<option value="s">Small</option>
+  					<option value="m">Medium</option>
+				    <option value="l">Large</option>
+   					<option value="xl">Extra Large</option>
+   					<option value="xxl">2X Large</option>
+				</select>
+            </div>
+            
+             <div class="form-group">
+                <label for="skills">Relevant Skills</label>
+                <p>Please list all relevant skills to this position.</p>
+                <input type="text" id="skills" name="skills" required>
+            </div>
+            <div class="form-group">
+                <label for="lang">Languages</label>
+                <p>Can you speak any languages other than English? If yes, please list the language.</p>
+                <input type="text" id="lang" name="lang" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.docx" required>
+            </div>
+            
+             <div class="form-group">
+                <label>Do you have a valid Social Security Number?</label>
+                <div class="toggle-container">
+                    <input type="checkbox" id="can-work" name="can-work">
+                    <label for="can-work" class="toggle-label"></label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </div>
+            
+            <div style="display:none" class="thankyou_message">
+			 <h2>Thanks for contacting us! We will get back to you soon!</h2><br></br>
+			 <p>Please contact <b>Dale Calhoun</b> <a>408-000-1313</a> or <b>William Kelley</b> <a>408-560-6116</a> with further questions. 
+			</div>
+        </form>
+    </div>
+
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    
+</body>
+</html>
