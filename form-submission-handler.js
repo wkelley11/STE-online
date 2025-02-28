@@ -28,7 +28,7 @@
       // singular form elements just have one value
       formData[name] = element.value;
 
-      // when our element has multiple items, get their values
+      // when element has multiple items, get their values
       if (element.length) {
         var data = [];
         for (var i = 0; i < element.length; i++) {
@@ -51,7 +51,7 @@
   }
 
   function handleFormSubmit(event) {  // handles form submit without any jquery
-    event.preventDefault();           // we are submitting via xhr below
+    event.preventDefault();           // submitting via xhr below
     var form = event.target;
     var formData = getFormData(form);
     var data = formData.data;
